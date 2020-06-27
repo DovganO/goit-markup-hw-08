@@ -1,0 +1,38 @@
+.work .item {
+  position: relative;
+}
+
+.variation {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.section.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list.work .section-title {
+  color: #ffffff;
+  background: $hero-bg-color;
+  border-radius: 0px 0px 4px 4px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.work {
+  display: flex;
+}
+
+.work .item {
+  width: 370px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.work .item + .item {
+  margin-left: 30px;
+}
