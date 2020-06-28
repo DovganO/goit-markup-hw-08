@@ -5,7 +5,8 @@
 }
 
 .team-list {
-  display: flex;
+  /*   display: flex;
+ */
 }
 
 .team-list-item {
@@ -45,8 +46,8 @@
 
 .networks {
   @extend %list;
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex;
+  justify-content: space-evenly; */
 }
 
 .networks .item + .item {
@@ -54,9 +55,9 @@
 }
 
 .networks .link {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   width: 44px;
   height: 44px;
   padding: 0;

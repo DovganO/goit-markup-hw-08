@@ -1,12 +1,13 @@
 .site-nav {
   @extend %list;
-  display: flex;
+  /* display: flex; */
   margin-left: 80px;
 }
 
 .site-nav .item {
   margin-right: 50px;
-  position: relative;
+  /*   position: relative;
+ */
 }
 
 .site-nav .link {
@@ -35,7 +36,7 @@
 .site-nav .link.current {
   &::after {
     content: "";
-    position: absolute;
+    /* position: absolute; */
     display: block;
     background-color: $accent-color;
     width: 100%;
