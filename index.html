@@ -175,16 +175,20 @@
       <section class="section team">
         <div class="container">
           <h2 class="section-title second">Наша команда</h2>
-          <ul lang="en" class="team-list list">
+          <ul class="team-list list">
             <li class="team-list-item">
               <img
                 class="picture"
-                src="./images/john_smith.jpg"
-                alt="John Smith"
-                width="270"
-                height="260"
+                srcset="
+                  ./images/nikolay_kucherenko/img@1x.jpg  480w,
+                  ./images/nikolay_kucherenko/img@2x.jpg  900w,
+                  ./images/nikolay_kucherenko/img@3x.jpg 1350w
+                "
+                src="./images/nikolay_kucherenko/img@1x.jpg"
+                alt="Николай Кучеренко"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
-              <h3 class="section-title">John Smith</h3>
+              <h3 class="section-title">Николай Кучеренко</h3>
               <p class="section-paragraph team">Product Designer</p>
 
               <ul class="networks list">
@@ -222,11 +226,11 @@
               <img
                 class="picture"
                 src="./images/marta_stewart.jpg"
-                alt="Marta Stewart"
+                alt="Ольга Иванова"
                 width="270"
                 height="260"
               />
-              <h3 class="section-title">Marta Stewart</h3>
+              <h3 class="section-title">Ольга Иванова</h3>
               <p class="section-paragraph team">Frontend Developer</p>
 
               <ul class="networks list">
@@ -265,11 +269,11 @@
               <img
                 class="picture"
                 src="./images/robert_jakis.jpg"
-                alt="Robert Jakis"
+                alt="Андрей Шевченко"
                 width="270"
                 height="260"
               />
-              <h3 class="section-title">Robert Jakis</h3>
+              <h3 class="section-title">Андрей Шевченко</h3>
               <p class="section-paragraph team">Marketing</p>
 
               <ul class="networks list">
@@ -307,11 +311,11 @@
               <img
                 class="picture"
                 src="./images/martin_doe.jpg"
-                alt="Martin Doe"
+                alt="Иван Николаев"
                 width="270"
                 height="260"
               />
-              <h3 class="section-title">Martin Doe</h3>
+              <h3 class="section-title">Иван Николаев</h3>
               <p class="section-paragraph team">UI Designer</p>
 
               <ul class="networks list">
