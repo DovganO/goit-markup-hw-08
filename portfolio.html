@@ -20,36 +20,66 @@
   <body>
     <header class="roof">
       <div class="container head">
-        <nav class="head">
+        <div class="logo-button">
           <a href="" class="logo">
             <span class="logo-modification">Web </span>Studio
           </a>
-          <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
-            </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
-        </nav>
-        <ul class="contacts list">
-          <li class="item">
-            <svg class="contacts-icon" width="16" height="14">
-              <use href="./images/sprite.svg#icon-envelope"></use>
-            </svg>
 
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
+          <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-colcount="container-menu"
+            data-menu-button
+          >
+            <svg
+              class="button-icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
             >
-          </li>
-          <li class="item">
-            <svg class="contacts-icon" width="10" height="15">
-              <use href="./images/sprite.svg#icon-smartphone"></use>
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#icon-close_40px"
+              ></use>
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#icon-menu_40px"
+              ></use>
             </svg>
+          </button>
+        </div>
 
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="container-menu" id="container-menu" data-menu>
+          <nav class="head">
+            <ul class="site-nav list">
+              <li class="item"><a href="index.html" class="link">Студия</a></li>
+              <li class="item">
+                <a href="./portfolio.html" class="link current">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <ul class="contacts list">
+            <li class="item">
+              <svg class="contacts-icon" width="16" height="14">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <svg class="contacts-icon" width="10" height="15">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+
+              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -80,13 +110,27 @@
             <li class="portfolio-element">
               <a href="" class="example">
                 <div class="portfolio-container">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/img_1.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/technokryak/img@1x.webp  480w,
+                        ./images/Portfolio/technokryak/img@2x.webp  900w,
+                        ./images/Portfolio/technokryak/img@3x.webp 1350w
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="picture"
+                      srcset="
+                        ./images/Portfolio/technokryak/img@1x.jpg  480w,
+                        ./images/Portfolio/technokryak/img@2x.jpg  900w,
+                        ./images/Portfolio/technokryak/img@3x.jpg 1350w
+                      "
+                      src="./images/Portfolio/technokryak/img@1x.jpg"
+                      alt=""
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
 
                   <p class="description">
                     Технокряк это современная площадка распространения
@@ -104,13 +148,27 @@
             <li class="portfolio-element">
               <a href="" class="example">
                 <div class="portfolio-container">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/img_2.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/new_orlean_vs_golden_star/img@1x.webp  480w,
+                        ./images/Portfolio/new_orlean_vs_golden_star/img@2x.webp  900w,
+                        ./images/Portfolio/new_orlean_vs_golden_star/img@3x.webp 1350w
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="picture"
+                      srcset="
+                        ./images/Portfolio/new_orlean_vs_golden_star/img@1x.jpg  480w,
+                        ./images/Portfolio/new_orlean_vs_golden_star/img@2x.jpg  900w,
+                        ./images/Portfolio/new_orlean_vs_golden_star/img@3x.jpg 1350w
+                      "
+                      src="./images/Portfolio/new_orlean_vs_golden_star/img@1x.jpg"
+                      alt=""
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
 
                   <p class="description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -129,13 +187,27 @@
             <li class="portfolio-element">
               <a href="" class="example">
                 <div class="portfolio-container">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/img_3.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/seafood/img@1x.webp  480w,
+                        ./images/Portfolio/seafood/img@2x.webp  900w,
+                        ./images/Portfolio/seafood/img@3x.webp 1350w
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="picture"
+                      srcset="
+                        ./images/Portfolio/seafood/img@1x.jpg  480w,
+                        ./images/Portfolio/seafood/img@2x.jpg  900w,
+                        ./images/Portfolio/seafood/img@3x.jpg 1350w
+                      "
+                      src="./images/Portfolio/seafood/img@1x.jpg"
+                      alt=""
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sapiente nostrum, molestiae modi unde maxime nihil nemo
@@ -153,13 +225,27 @@
             <li class="portfolio-element">
               <a href="" class="example">
                 <div class="portfolio-container">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/img_4.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/prime/img@1x.webp  480w,
+                        ./images/Portfolio/prime/img@2x.webp  900w,
+                        ./images/Portfolio/prime/img@3x.webp 1350w
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="picture"
+                      srcset="
+                        ./images/Portfolio/prime/img@1x.jpg  480w,
+                        ./images/Portfolio/prime/img@2x.jpg  900w,
+                        ./images/Portfolio/prime/img@3x.jpg 1350w
+                      "
+                      src="./images/Portfolio/prime/img@1x.jpg"
+                      alt=""
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sapiente nostrum, molestiae modi unde maxime nihil nemo
@@ -177,13 +263,27 @@
             <li class="portfolio-element">
               <a href="" class="example">
                 <div class="portfolio-container">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/img_5.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/boxes/img@1x.webp  480w,
+                        ./images/Portfolio/boxes/img@2x.webp  900w,
+                        ./images/Portfolio/boxes/img@3x.webp 1350w
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="picture"
+                      srcset="
+                        ./images/Portfolio/boxes/img@1x.jpg  480w,
+                        ./images/Portfolio/boxes/img@2x.jpg  900w,
+                        ./images/Portfolio/boxes/img@3x.jpg 1350w
+                      "
+                      src="./images/Portfolio/boxes/img@1x.jpg"
+                      alt=""
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sapiente nostrum, molestiae modi unde maxime nihil nemo
@@ -201,13 +301,27 @@
             <li class="portfolio-element">
               <a href="" class="example">
                 <div class="portfolio-container">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/img_6.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/inspiration_has_no_borders/img@1x.webp  480w,
+                        ./images/Portfolio/inspiration_has_no_borders/img@2x.webp  900w,
+                        ./images/Portfolio/inspiration_has_no_borders/img@3x.webp 1350w
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="picture"
+                      srcset="
+                        ./images/Portfolio/inspiration_has_no_borders/img@1x.jpg  480w,
+                        ./images/Portfolio/inspiration_has_no_borders/img@2x.jpg  900w,
+                        ./images/Portfolio/inspiration_has_no_borders/img@3x.jpg 1350w
+                      "
+                      src="./images/Portfolio/inspiration_has_no_borders/img@1x.jpg"
+                      alt=""
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sapiente nostrum, molestiae modi unde maxime nihil nemo
@@ -225,13 +339,27 @@
             <li class="portfolio-element">
               <a href="" class="example">
                 <div class="portfolio-container">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/img_7.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/limited_edition/img@1x.webp  480w,
+                        ./images/Portfolio/limited_edition/img@2x.webp  900w,
+                        ./images/Portfolio/limited_edition/img@3x.webp 1350w
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="picture"
+                      srcset="
+                        ./images/Portfolio/limited_edition/img@1x.jpg  480w,
+                        ./images/Portfolio/limited_edition/img@2x.jpg  900w,
+                        ./images/Portfolio/limited_edition/img@3x.jpg 1350w
+                      "
+                      src="./images/Portfolio/limited_edition/img@1x.jpg"
+                      alt=""
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sapiente nostrum, molestiae modi unde maxime nihil nemo
@@ -249,13 +377,27 @@
             <li class="portfolio-element">
               <a href="" class="example">
                 <div class="portfolio-container">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/img_8.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/lab/img@1x.webp  480w,
+                        ./images/Portfolio/lab/img@2x.webp  900w,
+                        ./images/Portfolio/lab/img@3x.webp 1350w
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="picture"
+                      srcset="
+                        ./images/Portfolio/lab/img@1x.jpg  480w,
+                        ./images/Portfolio/lab/img@2x.jpg  900w,
+                        ./images/Portfolio/lab/img@3x.jpg 1350w
+                      "
+                      src="./images/Portfolio/lab/img@1x.jpg"
+                      alt=""
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sapiente nostrum, molestiae modi unde maxime nihil nemo
@@ -273,13 +415,27 @@
             <li class="portfolio-element">
               <a href="" class="example">
                 <div class="portfolio-container">
-                  <img
-                    class="picture"
-                    src="./images/Portfolio/img_9.jpg"
-                    alt=""
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio/growing_business/img@1x.webp  480w,
+                        ./images/Portfolio/growing_business/img@2x.webp  900w,
+                        ./images/Portfolio/growing_business/img@3x.webp 1350w
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="picture"
+                      srcset="
+                        ./images/Portfolio/growing_business/img@1x.jpg  480w,
+                        ./images/Portfolio/growing_business/img@2x.jpg  900w,
+                        ./images/Portfolio/growing_business/img@3x.jpg 1350w
+                      "
+                      src="./images/Portfolio/growing_business/img@1x.jpg"
+                      alt=""
+                      sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <p class="description">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Sapiente nostrum, molestiae modi unde maxime nihil nemo
@@ -301,56 +457,58 @@
 
     <footer class="basement">
       <div class="container foot">
-        <div class="basement-section">
-          <a href="" class="logo">
-            <span class="logo-modification">Web</span>
-            <span class="logo-modification-foot">Studio</span>
-          </a>
-          <address class="address">
-            <p class="direction list">г. Киев, пр-т Леси Украинки, 26</p>
+        <div>
+          <div class="basement-section">
+            <a href="" class="logo">
+              <span class="logo-modification">Web</span>
+              <span class="logo-modification-foot">Studio</span>
+            </a>
+            <address class="address">
+              <p class="direction list">г. Киев, пр-т Леси Украинки, 26</p>
 
-            <a href="mailto:info@example.com" class="basement-link"
-              >info@example.com</a
-            >
+              <a href="mailto:info@example.com" class="basement-link"
+                >info@example.com</a
+              >
 
-            <a href="tel:+380991111111" class="basement-link"
-              >+38 099 111 11 11</a
-            >
-          </address>
-        </div>
+              <a href="tel:+380991111111" class="basement-link"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
 
-        <div class="join-section">
-          <b class="join">присоединяйтесь</b>
-          <ul class="networks list">
-            <li class="item">
-              <a href="" class="link" aria-label="Instagram">
-                <svg class="networks-icon">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="link" aria-label="Twiteer">
-                <svg class="networks-icon">
-                  <use href="./images/sprite.svg#icon-twiteer"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="link" aria-label="Facebook">
-                <svg class="networks-icon">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="link" aria-label="LinkedIn">
-                <svg class="networks-icon">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="join-section">
+            <b class="join">присоединяйтесь</b>
+            <ul class="networks list">
+              <li class="item">
+                <a href="" class="link" aria-label="Instagram">
+                  <svg class="networks-icon">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="link" aria-label="Twiteer">
+                  <svg class="networks-icon">
+                    <use href="./images/sprite.svg#icon-twiteer"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="link" aria-label="Facebook">
+                  <svg class="networks-icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="link" aria-label="LinkedIn">
+                  <svg class="networks-icon">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="mailing">
@@ -368,7 +526,10 @@
           </div>
         </div>
       </div>
-      <p class="copyright">2020 | Developed by GoIT Students</p>
+      <!--  <p class="copyright">2020 | Developed by GoIT Students</p> -->
     </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

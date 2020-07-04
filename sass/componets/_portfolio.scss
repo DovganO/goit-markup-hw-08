@@ -1,6 +1,11 @@
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .portfolio-button {
@@ -37,12 +42,17 @@
 
 .portfolio-list {
   @extend %list;
-  /*  display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
 }
 
 .portfolio-element {
-  /* display: flex; */
+  display: flex;
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -60,6 +70,12 @@
   &:hover {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -89,14 +105,14 @@
 }
 
 .portfolio-container {
-  /*   position: relative;
- */
+  position: relative;
+
   overflow: hidden;
 }
 
 .portfolio-container .description {
-  /*   position: absolute;
- */
+  position: absolute;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -146,8 +162,24 @@
  */
 }
 
+.button-list .item {
+  @media screen and (max-width: 767px) {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+}
+
 .button-list .item + .item {
-  margin-left: 8px;
+  /* margin-left: 8px; */
+
+  @media screen and (max-width: 767px) {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(5) {
+      margin-left: 8px;
+    }
+  }
 }
 
 .portfolio-element .content {
