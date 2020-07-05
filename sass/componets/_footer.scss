@@ -20,6 +20,15 @@
     margin-top: 60px;
     margin-bottom: 60px;
   }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .join-section {
@@ -29,6 +38,23 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
     margin-left: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 69px;
+  }
+}
+
+.basement-join {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -68,6 +94,16 @@
     display: block;
     flex-wrap: wrap;
   }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .direction {
@@ -103,11 +139,12 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-.join {
   display: block;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .join-section .link {
@@ -120,6 +157,14 @@
   @media screen and (max-width: 767px) {
     margin: 0;
   }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 94px;
+  }
 }
 
 .mailing-title {
@@ -130,6 +175,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .mailing-input {
@@ -146,11 +195,18 @@
     height: 50px;
     margin-bottom: 20px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
 }
 
 .mailing-grup {
-  /*   display: flex;
- */
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .mailing-icon {
@@ -171,6 +227,16 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 

@@ -11,9 +11,8 @@
     margin-right: auto;
     margin-left: auto;
   }
-}
 
-.container.head {
-  padding-top: 0em;
-  padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }

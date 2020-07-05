@@ -1,6 +1,6 @@
 .work .item {
-  /*   position: relative;
- */
+  position: relative;
+  flex-basis: calc((100% - 4 * 15px) / 2);
 }
 
 .variation {
@@ -12,10 +12,10 @@
 }
 
 .section.work {
-  padding-top: 94px;
+  padding-top: 0;
   padding-bottom: 94px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -28,9 +28,10 @@
   padding-bottom: 27px;
 }
 
-.work {
-  /*  display
-  :flex ; */
+.container .work {
+  @extend %list;
+  display: flex;
+  justify-content: center;
 }
 
 .work .item {
